@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary',
+    'cloudinary_storage'
 
 ]+PROJECT_APPS
 
@@ -143,8 +145,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # }
 
 
-MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = 'media/'
+
 AUTH_USER_MODEL = 'accounts.AppUser'
 
 
@@ -161,3 +162,11 @@ COMPANY_EMAIL = os.getenv("COMPANY_EMAIL")
 LOGIN_REDIRECT_URL='common:home'
 LOGOUT_REDIRECT_URL='accounts:login'
 LOGIN_URL='accounts:login'
+
+
+CLOUDINARY_STORAGE= {
+    'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET'),
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
