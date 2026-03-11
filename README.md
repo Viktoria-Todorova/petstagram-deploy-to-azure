@@ -28,6 +28,15 @@ A Django-based photo sharing app for pets, deployed to Azure App Service with Po
    - **Database** – PostgreSQL Flexible Server
 4. Click **Review + Create** → **Create**
 
+<img width="777" height="991" alt="1 create" src="https://github.com/user-attachments/assets/a01ffbfc-36d0-47da-a131-2ed8d002db6f" />
+
+<img width="787" height="836" alt="2" src="https://github.com/user-attachments/assets/0fc0d396-bc6d-42e9-8970-f4b5bb3c6edb" />
+
+<img width="1610" height="736" alt="3" src="https://github.com/user-attachments/assets/525fec6d-5c97-4c5f-9987-cb75b5103bdb" />
+
+
+
+
 ---
 
 ### Step 2: Configure Environment Variables
@@ -153,6 +162,11 @@ Azure will automatically create a GitHub Actions workflow file in your repo (`.g
 
 > ✅ After saving, go to your GitHub repo → **Actions** tab to monitor the deployment. Once it goes green, your app is live!
 
+<img width="951" height="601" alt="4" src="https://github.com/user-attachments/assets/af830698-38dd-4930-a34f-6d31e49647cb" />
+
+<img width="1171" height="212" alt="5" src="https://github.com/user-attachments/assets/206ef7fd-5727-4628-a37f-751bd634a329" />
+
+<img width="1912" height="815" alt="6" src="https://github.com/user-attachments/assets/5355ccdc-9b38-4f9f-b593-ae00cc9be440" />
 
 ---
 
@@ -165,6 +179,9 @@ Azure will automatically create a GitHub Actions workflow file in your repo (`.g
 ```bash
 python manage.py migrate
 ```
+
+<img width="1036" height="1025" alt="7 ssh" src="https://github.com/user-attachments/assets/6ae24c6d-5e48-40bd-abdb-80135cd7b7ff" />
+
 
 ##  STEP 8:☁️ Bonus: Cloudinary Setup
 
